@@ -31,7 +31,7 @@ class QM9EdgeDataset(DGLDataset):
     def __init__(self, label_keys, raw_dir=None, force_reload=False, verbose=False):
         self.label_keys = [self.label_map[key] for key in label_keys]
         print(self.label_keys)
-        super(QM9PathDataset, self).__init__(name='qm9path',
+        super(QM9EdgeDataset, self).__init__(name='qm9path',
                                              raw_dir=raw_dir,
                                              force_reload=force_reload,
                                              verbose=verbose)
